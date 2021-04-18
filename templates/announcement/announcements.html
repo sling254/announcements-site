@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%block title %} St.Kizito--Announcements {% endblock %}
+
+{% block content%}    
+<div class="container">
+          
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+
+            <label for="exampleFormControlInput1" for='title' class="form-label">Title</label>
+            <input class="form-control" type="text" id="title" name="title">
+        </div>
+        <div class="mb-3">
+            <label for='body' class="form-label">Body</label>
+            <textarea class="form-control" name="body" id="body" rows="3"></textarea> 
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+/*style the header */
+
+
+.header{
+    background:rgb(255, 17, 0);
+    position: center;
+    flex-direction: column;
+    margin: 10 auto;
+    text-align: center;
+    align-items: center
+
+}
+body {
+  position: relative;
+  /*background-color: #bdd0e7;
+  background-image: url("../images/background.jpg");
+  */
+
+  width: 750px;
+  margin: 0 auto;
+  background-repeat: repeat-x;
+}
+
+.msg{
+  position: center;
+  color: blue;
+  padding: 20px;
+  text-underline-position: auto;
+}
+
+

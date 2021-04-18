@@ -1,0 +1,10 @@
+<h1>Are you sure you wanna Delete:&nbsp<em>{{post}}</em>?</h1>
+<h3>{{post.body}}</h3>
+
+
+<a href="{% url 'review_announcements'%}" role="button">Cancel</a>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Confirm">
+
+</form>
